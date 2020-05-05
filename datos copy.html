@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Estadisticas | Washines</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="angular.min.js"></script>
+	
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300"  ng-app="myApp">
+
+    
+    <div class="site-wrap" id="home-section">
+      <header class="site-navbar site-navbar-target" role="banner">
+        <div class="container">
+          <div class="menu-wrap d-flex align-items-center">
+            <span class="d-inline-block d-lg-none"><a href="#" class="text-black site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-black"></span></a></span>
+
+              
+
+              <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav mr-auto ">
+                  <li class="active"><a href="index.html" class="nav-link">Inicio</a></li>
+                  <li><a href="about.html" class="nav-link">Nosotros</a></li>
+                  <li><a href="about.html" class="nav-link">Estadisticas</a></li>
+                </ul>
+              </nav>
+          </div>
+        </div>
+      </header>
+    <div class="ftco-blocks-cover-1">
+      <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')">
+        <div class="container">
+          <div class="row align-items-center ">
+
+            <div class="col-md-5 mt-5 pt-5">
+              <h1 class="mb-3 font-weight-bold text-teal">Estadisticas</h1>
+              <p><a class="text-white">Encuentra información recopilada con las pruebas realizadas</a></p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section bg-light" id="contact-section">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+        <div class="col-7 text-center mb-5">
+          <h2>Top 10 Alumnos</h2>
+          <p>Encuentra tus resultados aqui</p>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-lg-12 mb-5" >
+            <form action="#" method="post">
+              <div class="form-group row">
+                <div class="col-md-6 mb-4 mb-lg-0">
+                  <p>Imprimir lista aqui</p>
+                </div>
+              </div>
+
+              
+            </form>
+          </div>
+        </div>
+      </div>
+<!-- TABLA 1 -->
+      <div class="container">
+        <div class="row justify-content-center text-center">
+        <div class="col-7 text-center mb-5">
+          <h2>Tabla 1</h2>
+          <p>Estadisticas sobre las pruebas realizadas</p>
+        </div>
+      </div>
+<li style="display:none;">
+<div ng-controller="TablaGrupos">
+<h4>{{tablasGrupos()}}</h4>
+</div>
+</li>
+
+        <div class="row">
+          <div class="col-lg-12 mb-5" >
+            <form action="#" method="post">
+              <div class="form-group row" ng-controller="TablaGrupos">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Grado</th>
+                      <th scope="col">1º</th>
+                      <th scope="col">2º</th>
+                      <th scope="col">3º</th>
+                      <th scope="col">4º</th>
+                      <th scope="col">5º</th>
+                      <th scope="col">6º</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Alumnos</th>
+                      <td>{{primero()}}</td>
+                      <td>{{segundo()}}</td>
+                      <td>{{tercero()}}</td> 
+                      <td>{{cuarto()}}</td>
+                      <td>{{quinto()}}</td> 
+                      <td>{{sexto()}}</td> 
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+              
+              
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      
+        <!-- TABLA 2 -->
+      <div class="container">
+        <div class="row justify-content-center text-center">
+        <div class="col-7 text-center mb-5">
+          <h2>Tabla 2 </h2>
+          <p>Estadisticas sobre las pruebas realizadas en español</p>
+        </div>
+      </div>
+      
+    <li style="display:none;">
+          <div ng-controller="tablaAciertos1">
+          <h4>{{tablasAciertos()}}</h4>
+          </div>
+    </li>
+
+        <div class="row">
+          <div class="col-lg-12 mb-5" >
+            <form action="#" method="post">
+              <div class="form-group row" ng-controller="tablaAciertos1">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Numeros de Aciertos</th>
+                      <th scope="col">1 Acierto</th>
+                      <th scope="col">2 Acierto</th>
+                      <th scope="col">3 Acierto</th>
+                      <th scope="col">4 Acierto</th>
+                      <th scope="col">5 Acierto</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Aciertos</th>
+                      <td>{{uno() + " %"}}</td>  
+                      <td>{{dos() + " %"}}</td>  
+                      <td>{{tres() + " %"}}</td> 
+                      <td>{{cuatro() + " %"}}</td>
+                      <td>{{cinco() + " %"}}</td>   
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+
+              
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- TABLA 3 -->
+      <div class="container">
+        <div class="row justify-content-center text-center">
+        <div class="col-7 text-center mb-5">
+          <h2>Tabla 3 </h2>
+          <p>Estadisticas sobre las pruebas realizadas en Matematicas</p>
+        </div>
+      </div>
+      
+    <li style="display:none;">
+          <div ng-controller="tablaAciertos2">
+          <h4>{{tablasAciertos2()}}</h4>
+          </div>
+    </li>
+
+        <div class="row">
+          <div class="col-lg-12 mb-5" >
+            <form action="#" method="post">
+              <div class="form-group row" ng-controller="tablaAciertos2">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Numeros de Aciertos</th>
+                      <th scope="col">1 Acierto</th>
+                      <th scope="col">2 Acierto</th>
+                      <th scope="col">3 Acierto</th>
+                      <th scope="col">4 Acierto</th>
+                      <th scope="col">5 Acierto</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Aciertos</th>
+                      <td>{{uno() + " %"}}</td>  
+                      <td>{{dos() + " %"}}</td>  
+                      <td>{{tres() + " %"}}</td> 
+                      <td>{{cuatro() + " %"}}</td>
+                      <td>{{cinco() + " %"}}</td>   
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+
+              
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- TABLA 4 -->
+      <div class="container">
+        <div class="row justify-content-center text-center">
+        <div class="col-7 text-center mb-5">
+          <h2>Tabla 4</h2>
+          <p>Estadisticas sobre las pruebas realizadas en Ciencia</p>
+        </div>
+      </div>
+      
+    <li style="display:none;">
+          <div ng-controller="tablaAciertos3">
+          <h4>{{tablasAciertos3()}}</h4>
+          </div>
+    </li>
+
+        <div class="row">
+          <div class="col-lg-12 mb-5" >
+            <form action="#" method="post">
+              <div class="form-group row" ng-controller="tablaAciertos3">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Numeros de Aciertos</th>
+                      <th scope="col">1 Acierto</th>
+                      <th scope="col">2 Acierto</th>
+                      <th scope="col">3 Acierto</th>
+                      <th scope="col">4 Acierto</th>
+                      <th scope="col">5 Acierto</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Aciertos</th>
+                      <td>{{uno() + " %"}}</td>  
+                      <td>{{dos() + " %"}}</td>  
+                      <td>{{tres() + " %"}}</td> 
+                      <td>{{cuatro() + " %"}}</td>
+                      <td>{{cinco() + " %"}}</td>   
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+
+              
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- TABLA 5 -->
+      <div class="container">
+        <div class="row justify-content-center text-center">
+        <div class="col-7 text-center mb-5">
+          <h2>Tabla 5 </h2>
+          <p>Estadisticas de genero</p>
+        </div>
+      </div>
+      
+      <li style="display:none;">
+          <div ng-controller="PorGenero">
+          <h4>{{graficaGenero()}}</h4>
+          </div>
+      </li>
+      
+        <div class="row">
+          <div class="col-lg-12 mb-5" >
+            <form action="#" method="post">
+              <div class="form-group row" ng-controller="PorGenero">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Genero</th>
+                      <th scope="col">Masculino</th>
+                      <th scope="col">Femenino</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">porcentaje</th>
+                      <td>{{masculino() + " %"}}</td>  
+                      <td>{{femenino()+ " %"}}</td>  
+                      
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+      
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+</div>
+</div>
+
+
+
+
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+
+  </body>
+
+  <script>//tabla de alumnos por grados
+  var app = angular.module('myApp', []);
+    app.controller('TablaGrupos', function($scope,$http) {
+      // primero rercibimos el json 
+      $http.get('php/json_escolaridad.php').success(function(datos){
+        $scope.array = datos;
+    });
+    
+    // iniciamos la funcion Sistemas()
+      $scope.tablasGrupos = function() {
+          // "oldstr" recibe el valor del array
+      var oldstr=$scope.array;
+      // se remplaza los carecteres inecesarios recibido del JSON
+      var val=oldstr.toString().replace(/[\[\]"]+/g ,'');
+      // convertimos la cadena en una Array
+      var dArrreglo =val.split(',');
+  
+      // se declaran las variables ha usar
+      var cont1=0;
+      var cont2=0;
+      var cont3=0;
+      var cont4=0;
+      var cont5=0;
+      var cont6=0;
+      // Con el FOR contamos las catidad de alumnos por grado, y se guarda en su respectiva variable 
+      for ( i = 0; i < dArrreglo.length; i++) {
+            const element = dArrreglo[i];
+            if (element==1) {
+              cont1++;	
+            }else if (element==2) {
+              cont2++;
+              
+            } else if (element==3){
+              cont3++;
+              
+            }
+            else if (element==4){
+              cont4++;
+              
+            }
+            else if (element==5){
+              cont5++;
+              
+            }
+            else if (element==6){
+              cont6++;
+              
+            }
+          }
+  //convertimos las variables locales a globales 
+  value=[cont1,cont2,cont3, cont4, cont5,cont6];
+  a=cont1;
+  b=cont2;
+  c=cont3;
+  d=cont4;
+  e=cont5;
+  f=cont6;
+  
+    return value;
+  
+        };	
+        // creamos funciones por cada grado, que retorna la catidad de alumnos por grado
+        $scope.primero = function() {
+        value=a;
+        return value;
+        };	
+  
+        $scope.segundo= function() {
+        value=b;
+        return value;
+        };
+  
+        $scope.tercero= function() {
+        value=c;
+        return value;
+        };	
+  
+        $scope.cuarto= function() {
+        value=d;
+        return value;
+        };	
+  
+        $scope.quinto = function() {
+        value=e;
+        return value;
+        };
+  
+        $scope.sexto = function() {
+        value=f;
+        return value;
+        };
+  });
+  
+  </script>
+  <script>// tabla de resultados por aciertos en español
+    app.controller('tablaAciertos1', function($scope,$http) {
+      $http.get('php/json_aciertos1.php').success(function(datos){
+        $scope.array = datos;
+    });
+      
+      $scope.tablasAciertos = function() {
+          
+          var oldstr=$scope.array;
+          var val=oldstr.toString().replace(/[\[\]"]+/g ,'');
+      var dArrreglo =val.split(',');
+          // alert("asd");
+  
+      var cont1=0;
+      var cont2=0;
+      var cont3=0;
+      var cont4=0;
+      var cont5=0;
+  
+      for ( i = 0; i < dArrreglo.length; i++) {
+            const element = dArrreglo[i];
+            if (element==1) {
+              cont1++;	
+  
+            }
+            else if (element==2){
+              cont2++;
+              
+            }
+            else if (element==3) {
+              cont3++;
+              
+            } 
+            else if (element==4){
+              cont4++;
+                  
+            }
+            else if (element==5){
+              cont5++;
+              
+            }
+          }
+  
+      por1 = (cont1 / dArrreglo.length) * 100;
+      var porC1 = parseInt(por1, 10);
+  
+      por2 = (cont2/ dArrreglo.length) * 100;
+      var porC2 = parseInt(por2, 10);	
+  
+      por3 = (cont3 / dArrreglo.length) * 100;
+      var porC3 = parseInt(por3, 10);
+  
+      por4 = (cont4 / dArrreglo.length) * 100;
+      var porC4= parseInt(por4, 10);	
+  
+      por5= (cont5 / dArrreglo.length) * 100;
+      var porC5 = parseInt(por5, 10);
+  
+    //value=[cont1,cont2,cont3,cont4,cont5];		
+  value=[porC1,porC2,porC3,porC4,porC5];
+  a=porC1;
+  b=porC2;
+  c=porC3;
+  d=porC4;
+  e=porC5;
+  // a=cont1;
+  // b=cont2;
+  // c=cont3;
+  // d=cont4;
+  // e=cont5;
+  // alert(value);
+    return value;
+  
+        };	
+  
+        $scope.uno= function() {
+        value=a;
+        return value;
+        };	
+  
+        $scope.dos = function() {
+        value=b;
+        return value;
+        };
+  
+        $scope.tres = function() {
+        value=c;
+        return value;
+        };	
+  
+        $scope.cuatro= function() {
+        value=d;
+        return value;
+        };	
+  
+        $scope.cinco= function() {
+        value=e;
+        return value;
+        };
+  });
+  </script>
+
+<script>// tabla de resultados por aciertos en matematicas
+  app.controller('tablaAciertos2', function($scope,$http) {
+    $http.get('php/json_aciertos2.php').success(function(datos){
+      $scope.array = datos;
+  });
+    
+    $scope.tablasAciertos2 = function() {
+        
+        var oldstr=$scope.array;
+        var val=oldstr.toString().replace(/[\[\]"]+/g ,'');
+    var dArrreglo =val.split(',');
+    
+    var cont1=0;
+    var cont2=0;
+    var cont3=0;
+    var cont4=0;
+    var cont5=0;
+
+    for ( i = 0; i < dArrreglo.length; i++) {
+          const element = dArrreglo[i];
+          if (element==1) {
+            cont1++;	
+
+          }
+          else if (element==2){
+            cont2++;
+            
+          }
+          else if (element==3) {
+            cont3++;
+            
+          } 
+          else if (element==4){
+            cont4++;
+                
+          }
+          else if (element==5){
+            cont5++;
+            
+          }
+        }
+
+    por1 = (cont1 / dArrreglo.length) * 100;
+    var porC1 = parseInt(por1, 10);
+
+    por2 = (cont2/ dArrreglo.length) * 100;
+    var porC2 = parseInt(por2, 10);	
+
+    por3 = (cont3 / dArrreglo.length) * 100;
+    var porC3 = parseInt(por3, 10);
+
+    por4 = (cont4 / dArrreglo.length) * 100;
+    var porC4= parseInt(por4, 10);	
+
+    por5= (cont5 / dArrreglo.length) * 100;
+    var porC5 = parseInt(por5, 10);
+
+	
+value=[porC1,porC2,porC3,porC4,porC5];
+a=porC1;
+b=porC2;
+c=porC3;
+d=porC4;
+e=porC5;
+
+  return value;
+
+      };	
+
+      $scope.uno= function() {
+      value=a;
+      return value;
+      };	
+
+      $scope.dos = function() {
+      value=b;
+      return value;
+      };
+
+      $scope.tres = function() {
+      value=c;
+      return value;
+      };	
+
+      $scope.cuatro= function() {
+      value=d;
+      return value;
+      };	
+
+      $scope.cinco= function() {
+      value=e;
+      return value;
+      };
+});
+</script>
+
+<script>// tabla de resultados por aciertos en Ciencias
+  app.controller('tablaAciertos3', function($scope,$http) {
+    $http.get('php/json_aciertos3.php').success(function(datos){
+      $scope.array = datos;
+  });
+    
+    $scope.tablasAciertos3 = function() {
+        
+        var oldstr=$scope.array;
+        var val=oldstr.toString().replace(/[\[\]"]+/g ,'');
+    var dArrreglo =val.split(',');
+
+
+    var cont1=0;
+    var cont2=0;
+    var cont3=0;
+    var cont4=0;
+    var cont5=0;
+
+    for ( i = 0; i < dArrreglo.length; i++) {
+          const element = dArrreglo[i];
+          if (element==1) {
+            cont1++;	
+
+          }
+          else if (element==2){
+            cont2++;
+            
+          }
+          else if (element==3) {
+            cont3++;
+            
+          } 
+          else if (element==4){
+            cont4++;
+                
+          }
+          else if (element==5){
+            cont5++;
+            
+          }
+        }
+
+    por1 = (cont1 / dArrreglo.length) * 100;
+    var porC1 = parseInt(por1, 10);
+
+    por2 = (cont2/ dArrreglo.length) * 100;
+    var porC2 = parseInt(por2, 10);	
+
+    por3 = (cont3 / dArrreglo.length) * 100;
+    var porC3 = parseInt(por3, 10);
+
+    por4 = (cont4 / dArrreglo.length) * 100;
+    var porC4= parseInt(por4, 10);	
+
+    por5= (cont5 / dArrreglo.length) * 100;
+    var porC5 = parseInt(por5, 10);
+
+ 
+value=[porC1,porC2,porC3,porC4,porC5];
+a=porC1;
+b=porC2;
+c=porC3;
+d=porC4;
+e=porC5;
+
+  return value;
+
+      };	
+
+      $scope.uno= function() {
+      value=a;
+      return value;
+      };	
+
+      $scope.dos = function() {
+      value=b;
+      return value;
+      };
+
+      $scope.tres = function() {
+      value=c;
+      return value;
+      };	
+
+      $scope.cuatro= function() {
+      value=d;
+      return value;
+      };	
+
+      $scope.cinco= function() {
+      value=e;
+      return value;
+      };
+});
+</script>
+
+  <script>
+    app.controller('GraficaTres', function($scope,$http) {
+      $http.get('php/json_ambiental.php').success(function(datos){
+        $scope.array = datos;
+    });
+      
+      $scope.graficaAmbiental = function() {
+          
+          var oldstr=$scope.array;
+          var val=oldstr.toString().replace(/["]+/g ,'');
+      var val2 =val.split(',');
+          // alert("asd");
+  
+      var cont7=0;
+      var cont3=0;
+      var cont5=0;
+      var cont1=0;
+      for ( i = 0; i < val2.length; i++) {
+            const element = val2[i];
+            if (element==7) {
+              cont7++;	
+            }else if (element==3) {
+              cont3++;
+              
+            } else if (element==5){
+              cont5++;
+              
+            }
+            else if (element==1){
+              cont1++;
+              
+            }
+          }
+          
+  value=[cont7,cont3,cont5, cont1];
+  d=cont1;
+  b=cont3;
+  c=cont5;
+  a=cont7;
+  // alert(value);
+    return value;
+  
+        };	
+  
+        $scope.primero = function() {
+        value=d;
+        return value;
+        };	
+  
+        $scope.tercero = function() {
+        value=b;
+        return value;
+        };
+  
+        $scope.quinto = function() {
+        value=c;
+        return value;
+        };	
+  
+        $scope.septimo = function() {
+        value=a;
+        return value;
+        };	
+  });
+  </script>
+  
+  <script>
+    app.controller('GraficaCuatro', function($scope,$http) {
+      $http.get('php/json_civil.php').success(function(datos){
+        $scope.array = datos;
+    });
+      
+      $scope.graficaCivil = function() {
+          
+          var oldstr=$scope.array;
+          var val=oldstr.toString().replace(/[\[\]"]+/g ,'');
+      var val2 =val.split(',');
+          // alert("asd");
+  
+      var cont7=0;
+      var cont3=0;
+      var cont5=0;
+      var cont1=0;
+      for ( i = 0; i < val2.length; i++) {
+            const element = val2[i];
+            if (element==7) {
+              cont7++;	
+            }else if (element==3) {
+              cont3++;
+              
+            } else if (element==5){
+              cont5++;
+              
+            }
+            else if (element==1){
+              cont1++;
+              
+            }
+          }
+          
+  value=[cont7,cont3,cont5, cont1];
+  d=cont1;
+  b=cont3;
+  c=cont5;
+  a=cont7;
+  // alert(value);
+    return value;
+  
+        };	
+  
+        $scope.primero = function() {
+        value=d;
+        return value;
+        };	
+  
+        $scope.tercero = function() {
+        value=b;
+        return value;
+        };
+  
+        $scope.quinto = function() {
+        value=c;
+        return value;
+        };	
+  
+        $scope.septimo = function() {
+        value=a;
+        return value;
+        };	
+  });
+  </script>
+  
+  <script>//estudiantes por genero
+    // extraemos los datos de JSON
+    app.controller('PorGenero', function($scope,$http) {
+      $http.get('php/json_genero.php').success(function(datos){
+        $scope.array = datos;
+    });
+      // iniciamos la funcion "graficaSexo()"
+      $scope.graficaGenero = function() {
+      
+      // "oldstr" toma el valor del array
+      var oldstr=$scope.array;
+      // con una expresion regular quitamos lo que devuelve el JSON
+      var val=oldstr.toString().replace(/[\[\]"]+/g ,'');
+      // convertimos la variable a un Array
+      var dArrreglo =val.split(',');
+      // declaramos las variables a utizar
+      var fem=0;
+      var mas=0;
+      // con el FOR contamos los parametros del Array y los almacenanmos en sus respectivas variables
+      for ( i = 0; i < dArrreglo.length; i++) {
+            const element = dArrreglo[i];
+            if (element==1) {
+              mas++;	
+            }else if (element==2){
+              fem++;
+              
+            }
+          }
+  
+  
+      porMas = (mas / dArrreglo.length) * 100;
+      var porCMas = parseInt(porMas, 10);
+  
+      porFem = (fem / dArrreglo.length) * 100;
+      var porCFem = parseInt(porFem, 10);
+  // convertimos las variables local a globales 
+  value=[porCMas, porCFem];
+  a=porCMas;
+  b=porCFem;
+    return value;
+  
+        };	
+        // esta funcion devuelve la cantidad de alumnos masculinos
+        $scope.masculino = function() {
+        value=a;
+        return value;
+      };	
+      
+      // esta funcion devuelve la cantidad de alumnas
+        $scope.femenino = function() {
+        value=b;
+        return value;
+        };	
+  });
+  </script>
+</html>
+
